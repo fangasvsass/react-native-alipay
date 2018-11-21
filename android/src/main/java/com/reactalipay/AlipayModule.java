@@ -43,7 +43,7 @@ public class AlipayModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void pay(final String orderInfo, final Promise promise) {
+  public void payment(final String orderInfo, final Promise promise) {
     Runnable runnable = new Runnable() {
       @Override
       public void run() {

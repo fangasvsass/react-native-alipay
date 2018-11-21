@@ -63,7 +63,7 @@ RCT_EXPORT_METHOD(authWithInfo:(NSString *)infoStr
     }];
 }
 
-RCT_EXPORT_METHOD(pay:(NSString *)orderInfo
+RCT_EXPORT_METHOD(payment:(NSString *)orderInfo
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject) {
     self.payOrderResolve = resolve;
