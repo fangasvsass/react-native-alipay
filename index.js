@@ -47,8 +47,7 @@ Alipay.pay = async authorization_details => {
   if (result.resultStatus === '9000') {
     return this.sendPaySuccess()
   } else {
-    const data = JSON.parse(result.result)
-    return this.sendPayFail(data)
+    return this.sendPayFail()
   }
 }
 
@@ -57,15 +56,10 @@ sendPaySuccess = () => {
   result.errCode = 0
   return result
 }
-sendPayFail = data => {
+sendPayFail = () => {
   const result = {}
   //支付失败
   result.errCode = -1
-  result.resultCode = data.code
-  //京东返回的errorcode
-  if (data && data.msg) {
-    result.error = data.msg
-  }
   return result
 }
 
