@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RCTAlipay"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "Alipay SDK for React Native"
   s.description  = <<-DESC
                   Alipay SDK for React Native.

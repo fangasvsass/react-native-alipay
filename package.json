@@ -1,6 +1,6 @@
 {
   "name": "react-native-letote-alipay",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Alipay SDK for React Native. Support RN >= 0.47.",
   "main": "index.js",
   "scripts": {
