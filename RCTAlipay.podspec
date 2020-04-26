@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RCTAlipay"
-  s.version      = "1.0.0"
+  s.version      = "0.1.0"
   s.summary      = "Alipay SDK for React Native"
   s.description  = <<-DESC
                   Alipay SDK for React Native.
@@ -16,11 +16,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.resource = 'AlipaySDK.bundle'
-  s.vendored_frameworks = 'AlipaySDK.framework'
-  # s.vendored_libraries = "libAlipaySDK.a"
-  s.frameworks = "SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics", "UIKit", "Foundation", "CFNetwork", "CoreMotion"
-  s.library = "c++", "z"
+  s.dependency "AlipaySDK-iOS"
 
 end
 
